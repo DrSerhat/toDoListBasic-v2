@@ -1,0 +1,28 @@
+{
+  "name": "v2-todolist",
+  "version": "1.0.0",
+  "description": "toDoList Basic v2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrSerhat/toDoListBasic-v2.git"
+  },
+  "keywords": [
+    "toDoList"
+  ],
+  "author": "Serhat ÖZTÜRK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrSerhat/toDoListBasic-v2/issues"
+  },
+  "homepage": "https://github.com/DrSerhat/toDoListBasic-v2#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.1.0"
+  }
+}
