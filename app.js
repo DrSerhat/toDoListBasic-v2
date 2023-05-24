@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://admin-ser:ser123@cluster0.ba01uaw.mongodb.net/todolistDB?retryWrites=true&w=majority');
+    await mongoose.connect('mongodb+srv://admin-ser:ser123@cluster0.ba01uaw.mongodb.net/todolistDB?retryWrites=true&w=majority');
 
   //await mongoose.connect('mongodb+srv://<username>:<password>@cluster0.ba01uaw.mongodb.net/<databasename>');
   //await mongoose.connect('mongodb://127.0.0.1:27017/todolistDB');
@@ -132,11 +132,13 @@ app.get("/about", function(req, res){
 app.listen(process.env.PORT);
 
 let port=process.env.PORT;
-console.log(port);
+
 if(port==null||port=="")
 {
   port=3000;
   app.listen(port,function() {
     console.log("Server started on port 3000");
   });
+} else{
+  console.log("Now on port: "+port);
 }
